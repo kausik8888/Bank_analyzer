@@ -112,7 +112,7 @@ class DashboardUI:
                 if st.button("Generate Pie Chart"):
                     if selected_users:
                         # Create figure and subplot
-                        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(7, 5),facecolor='White')
+                        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(7, 5),facecolor='5b5459')
                         
                         # Filter data for selected users
                         filtered_data = df[df['upi_transaction_name'].isin(selected_users)]
