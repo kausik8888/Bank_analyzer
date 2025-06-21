@@ -127,12 +127,12 @@ class DashboardUI:
                         ax1.set_facecolor('none')
                         ax2.set_facecolor('none')
                         # Plot withdrawals pie chart
-                        ax1.pie(withdrawals, labels=withdrawals.index, shadow=False, autopct='%1.1f%%',fontsize=15)
-                        ax1.set_title('Withdrawal Distribution')
+                        ax1.pie(withdrawals, labels=withdrawals.index, shadow=False, autopct='%1.1f%%')
+                        ax1.set_title('Withdrawal Distribution',fontsize=15)
                         
                         # Plot deposits pie chart
-                        ax2.pie(deposits, labels=deposits.index, shadow=False, autopct='%1.1f%%',fontsize=15)
-                        ax2.set_title('Deposit Distribution')
+                        ax2.pie(deposits, labels=deposits.index, shadow=False, autopct='%1.1f%%')
+                        ax2.set_title('Deposit Distribution',,fontsize=15)
                         
                         # Adjust layout and display
                         plt.tight_layout()
