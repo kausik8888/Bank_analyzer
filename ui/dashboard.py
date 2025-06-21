@@ -112,7 +112,7 @@ class DashboardUI:
                 if st.button("Generate Pie Chart"):
                     if selected_users:
                         # Create figure and subplot
-                        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(7, 5),facecolor='#57648A',Figure.set(15))
+                        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(7, 5),facecolor='#57648A')
                         
                         # Filter data for selected users
                         filtered_data = df[df['upi_transaction_name'].isin(selected_users)]
@@ -127,11 +127,11 @@ class DashboardUI:
                         ax1.set_facecolor('none')
                         ax2.set_facecolor('none')
                         # Plot withdrawals pie chart
-                        ax1.pie(withdrawals, labels=withdrawals.index, shadow=False, autopct='%1.1f%%')
+                        ax1.pie(withdrawals, labels=withdrawals.index, shadow=False, autopct='%1.1f%%',fontsize=15)
                         ax1.set_title('Withdrawal Distribution')
                         
                         # Plot deposits pie chart
-                        ax2.pie(deposits, labels=deposits.index, shadow=False, autopct='%1.1f%%')
+                        ax2.pie(deposits, labels=deposits.index, shadow=False, autopct='%1.1f%%',fontsize=15)
                         ax2.set_title('Deposit Distribution')
                         
                         # Adjust layout and display
