@@ -132,7 +132,7 @@ class DashboardUI:
                         
                         # Plot deposits pie chart
                         ax2.pie(deposits, labels=deposits.index, shadow=False, autopct='%1.1f%%')
-                        ax2.set_title('Deposit Distribution',,fontsize=15)
+                        ax2.set_title('Deposit Distribution',fontsize=15)
                         
                         # Adjust layout and display
                         plt.tight_layout()
